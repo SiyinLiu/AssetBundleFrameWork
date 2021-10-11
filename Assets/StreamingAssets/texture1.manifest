@@ -1,0 +1,17 @@
+ManifestFileVersion: 0
+CRC: 3086625875
+Hashes:
+  AssetFileHash:
+    serializedVersion: 2
+    Hash: c491b00936af3d63c881f80fe5188ed8
+  TypeTreeHash:
+    serializedVersion: 2
+    Hash: f19fbf085e00d23fbc8d6cf7b345590b
+HashAppended: 0
+ClassTypes:
+- Class: 28
+  Script: {instanceID: 0}
+Assets:
+- Assets/Res/Textures/mouse_background.png
+- Assets/Res/Textures/conga2.png
+Dependencies: []

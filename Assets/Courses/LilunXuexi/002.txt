@@ -1,0 +1,23 @@
+/*************************************************************************
+ *  File                        :  002.txt
+ *  Author                 :  SiyinLiu
+ *  Date                     :  2021-10-11
+ *  Description        :  
+ *************************************************************************/
+ 创建AssetBundle包
+    早期基于Unity4.x版本期间，创建AssetBundle是一件需要写大量代码且容易出错的事情，但到了Unity5.x以后这一过程已经大大简化。
+    基于Unity2017版本创建AssetBundle可以分为以下3大步骤：
+        1：首先定位需要打包与加载的资源，资源可以是任意类型(如：贴图、材质、音频、预设等)。在项目视图中点击资源，属性窗口下方可以看到资源预览。在AssetBundle后面输入要打包的"AssetBundle名称"。
+        2：现在编写打包脚本BuildAssetBundle.cs,在编写前首先确认脚本定义在"Editor"的特殊文件夹下。
+        3：打包核心API：
+            BuildPipeline.BuildAssetBundles("AB输出路径"，BuildAssetBundleOptions.None,BuildTarget.StandaloneWindows64);
+        4：编写脚本，在Unity编辑器顶部菜单会出现自定义的AB菜单。点击菜单后开始打包，大约几秒后在项目视图的StreamingAssets目录下我们可以看到打包好的资源。
+        代码位于Asset/Scripts/Editor/BuildAssentBundles
+
+下载AssetBundle
+    通过WWW类的实例方法www.assetBundle实现下载。
+    Unity目前提供了两种通过WWW类下载AssetBundle文件的方式方法。
+    第一种是"缓存机制"。采用这种机制下载的AssetBundle文件会存入Unity引擎的缓冲区，通过WWW类的静态方法LoadFromCacheOrDownload实现下载。
+    第二种是"非缓存机制"。采用这种机制下载的AssetBundle文件不会存入Unity引擎缓存区。（www.assetBundle）
+
+

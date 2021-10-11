@@ -1,0 +1,16 @@
+/*************************************************************************
+ *  File                        :  003.txt
+ *  Author                 :  SiyinLiu
+ *  Date                     :  2021-10-11
+ *  Description        :  
+ *************************************************************************/
+ AssetBundle原理讲解
+    在应用AssetBundle资源之前，AssetBundle首先需要通过WWW下载到本地，然后AssetBundle在Unity引擎帮助下自动解压缩，
+    这一过程也称为"内存镜像"。
+    然后需要加载AssetBundle到内存区域中通过相关操作，最终创建具体的游戏对象才能显示与应用。
+    
+    值得一提的是Unity2017提供了三种不同的方法来加载已经下载的数据源。
+    assetBundle.LoadAsset() 通过指定assetBundle包名称加载资源。
+    assetBundle.LoadAssetAsync(); 异步加载模式，与上述类似，但是加载过程中不会同时阻碍主线程的运行，这特别适合需要读取大尺寸
+    资源，以及一次性读取多个资源的场合。
+    assetBundle.LoadAllAssets()加载assetBundle中包含的所有资源对象。
