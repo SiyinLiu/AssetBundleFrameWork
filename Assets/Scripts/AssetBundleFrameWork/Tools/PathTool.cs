@@ -71,6 +71,30 @@ namespace ABFW
             }
             return strReturnPlatformName;
         }
+
+        /// <summary>
+        /// 获取WWW协议下载(AB包路径)
+        /// </summary>
+        /// <returns></returns>
+        public static string GetWWWPath()
+        {
+            string strReturnWWWPath = string.Empty;
+            switch (Application.platform)
+            {
+               
+                case RuntimePlatform.WindowsPlayer:
+                case RuntimePlatform.WindowsEditor:
+                    strReturnWWWPath = "file://" + GetABOutPath();
+                    break;
+                case RuntimePlatform.IPhonePlayer:
+                case RuntimePlatform.Android:
+                    strReturnWWWPath = "jar:file://" + GetABOutPath();
+                    break;
+                default:
+                    break;
+            }
+            return strReturnWWWPath;
+        }
     }
 }
 

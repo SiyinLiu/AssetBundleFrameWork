@@ -1,0 +1,37 @@
+ManifestFileVersion: 0
+CRC: 2461945453
+Hashes:
+  AssetFileHash:
+    serializedVersion: 2
+    Hash: 793903ab2a9597104fd7fc05f329baae
+  TypeTreeHash:
+    serializedVersion: 2
+    Hash: bf9c568eb9502f17057e0ba645d9d642
+HashAppended: 0
+ClassTypes:
+- Class: 1
+  Script: {instanceID: 0}
+- Class: 4
+  Script: {instanceID: 0}
+- Class: 21
+  Script: {instanceID: 0}
+- Class: 23
+  Script: {instanceID: 0}
+- Class: 33
+  Script: {instanceID: 0}
+- Class: 43
+  Script: {instanceID: 0}
+- Class: 48
+  Script: {instanceID: 0}
+- Class: 64
+  Script: {instanceID: 0}
+- Class: 65
+  Script: {instanceID: 0}
+- Class: 136
+  Script: {instanceID: 0}
+Assets:
+- Assets/AB_Res/Scence_1/Prefabs/Capsule.prefab
+- Assets/AB_Res/Scence_1/Prefabs/TestCubePrefab.prefab
+- Assets/AB_Res/Scence_1/Prefabs/Plane.prefab
+Dependencies:
+- D:/Projects/Unity/AssetBundleFrameWork/Assets/StreamingAssets/Windows/scence_1/materials.ab

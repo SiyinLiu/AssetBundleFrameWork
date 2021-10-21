@@ -1,5 +1,5 @@
 ManifestFileVersion: 0
-CRC: 93413244
+CRC: 1758383143
 AssetBundleManifest:
   AssetBundleInfos:
     Info_0:
@@ -12,3 +12,7 @@ AssetBundleManifest:
     Info_2:
       Name: scence_1/scence_1.u3d
       Dependencies: {}
+    Info_3:
+      Name: scence_1/prefabs.ab
+      Dependencies:
+        Dependency_0: scence_1/materials.ab
