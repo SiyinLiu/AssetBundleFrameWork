@@ -10,7 +10,6 @@ using UnityEngine;
 
 namespace ABFW
 {
-
     public class ABManifestLoader : System.IDisposable
     {
         //±¾ÀàÊµÀı
