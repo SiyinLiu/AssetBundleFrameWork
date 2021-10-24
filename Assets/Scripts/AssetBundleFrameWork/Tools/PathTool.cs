@@ -32,7 +32,7 @@ namespace ABFW
             return GetPlatfromPath() + "/" + GetPlatformName();        
         }
 
-        private static string GetPlatfromPath()
+        public static string GetPlatfromPath()
         {
             string strReturnPlatformPath = string.Empty;
             switch (Application.platform)

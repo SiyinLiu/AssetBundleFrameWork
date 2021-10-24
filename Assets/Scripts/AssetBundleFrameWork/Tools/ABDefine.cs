@@ -25,6 +25,7 @@ namespace ABFW {
         #endregion
 
         #region 常量类型定义区
+        public const string ASSETBUNDLE_MANIFEST = "AssetBundleManifest";
         #endregion
     }
 }
